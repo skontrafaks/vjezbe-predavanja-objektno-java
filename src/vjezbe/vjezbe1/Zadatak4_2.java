@@ -1,4 +1,4 @@
-package vjezbe1;
+package vjezbe.vjezbe1;
 
 import java.util.Scanner;
 

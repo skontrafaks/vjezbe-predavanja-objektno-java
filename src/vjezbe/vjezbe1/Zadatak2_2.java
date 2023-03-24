@@ -1,4 +1,4 @@
-package vjezbe1;
+package vjezbe.vjezbe1;
 
 public class Zadatak2_2 {
 
