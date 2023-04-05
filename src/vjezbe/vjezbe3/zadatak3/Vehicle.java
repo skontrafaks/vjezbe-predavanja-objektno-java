@@ -1,12 +1,17 @@
 package vjezbe.vjezbe3.zadatak3;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Vehicle {
 
-    protected String brand;
-    protected String model;
-    protected String date;
-    protected int vehID;
-    protected static int autoInc = 300;
+    String brand;
+    String model;
+    SimpleDateFormat dateFormater;
+    int vehID;
+    private static int autoInc = 300;
+    Date productionDate;
 
     public Vehicle() {
         this.vehID = vehID + autoInc;
@@ -18,19 +23,24 @@ public class Vehicle {
         this.model = model;
         this.vehID = vehID + autoInc;
         autoInc++;
+        dateFormater = new SimpleDateFormat("dd/MM/yyyy.");
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setProductionDate(String dateProduced){
+        try {
+            productionDate = dateFormater.parse(dateProduced);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
+
 
     public void startVehicle() {
         System.out.println("Ovo vozilo je upaljeno");
-        boolean vehOn = true;
     }
 
     public void stopVehicle() {
-        System.out.println("Zaustavljam vozilo!");
+        System.out.println(getClass().getSimpleName() + " Zaustavljam vozilo!");
         System.out.println("Gasim motor.");
     }
 
@@ -39,13 +49,13 @@ public class Vehicle {
         return "Vehicle[" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
-                ", date=" + date +
+                ", date=" + dateFormater.format(productionDate) +
                 ", vehID=" + vehID +
                 ']';
     }
 
     protected void vehInfo() {
-        System.out.println(toString());
+        System.out.println(this);
     }
 
     private void additionalMethod() {

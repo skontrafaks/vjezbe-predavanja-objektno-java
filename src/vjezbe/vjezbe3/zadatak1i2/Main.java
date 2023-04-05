@@ -1,8 +1,5 @@
 package vjezbe.vjezbe3.zadatak1i2;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -11,22 +8,16 @@ public class Main {
         robi.setID(420);
         robi.setName("Robi");
         robi.walk();
-        System.out.println("Rezultat rekurzije unesenog broja je: " + robi.factJel(5));
+        System.out.println("Suma prvih brojeva= " + robi.sumaNBrojeva(4));
+        System.out.println("Rezultat rekurzije unesenog broja je: " + robi.factJel(0));
+        System.out.println("Potencija je = " + robi.potencijaNbroja(4, 3));
 
+        while(robi.flag){
 
-        //Drugi zadatak
-        Scanner scanner = new Scanner(System.in);
-        int brojUnosa = 0;
+            robi.fillArr();
 
-        do {
-            System.out.printf("Unesi %d. element liste:\n",brojUnosa );
-            int unos = scanner.nextInt();
-            robi.fillArr(unos);
-            scanner.nextLine();
-            brojUnosa++;
-        } while (brojUnosa <= 20);
-
-        System.out.println(Arrays.deepToString(robi.array2d));
+        }
+        robi.print2dArray();
 
     }
 }
