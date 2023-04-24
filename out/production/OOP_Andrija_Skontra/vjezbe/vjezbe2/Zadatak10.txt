@@ -1,0 +1,3 @@
+Iz ovog zadatka vidimo da kod String-a mijenjanjem 'g' u 'G' zapravo ne mijenjamo taj string
+već brišemo stari String i stvaramo novi. To možemo dokazati promatrajući njihov HashCode(nije isti).
+Int[] je mutable, njegov HashCode se ne mijenja.
