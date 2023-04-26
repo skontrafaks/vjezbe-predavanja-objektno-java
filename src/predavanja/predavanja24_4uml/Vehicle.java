@@ -8,7 +8,7 @@ public class Vehicle {
     private String model;
     private int years;
     private int id;
-    private static int cntID = 1;
+    private static int cntID = 237;
     private String carPlate;
     private static final int MINYR = 1;
     private static final int MAXYR = 30;
