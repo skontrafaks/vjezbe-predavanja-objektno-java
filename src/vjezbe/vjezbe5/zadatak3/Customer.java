@@ -16,6 +16,6 @@ public class Customer {
     }
 
     public void customerInfo() {
-        System.out.println(this.toString());
+        System.out.println(this);
     }
 }

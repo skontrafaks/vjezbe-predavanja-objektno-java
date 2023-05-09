@@ -1,50 +1,26 @@
 package vjezbe.vjezbe5.zadatak3;
 
 public abstract class Item {
-    abstract float itemPrice();
-    abstract float getPrice();
-    abstract int getNumberOf();
 
+    protected float itemPrice;
+    protected int numItems;
 
-    private class TShirt extends Item {
-
-        int tShirtPrice = 10;
-        int numberOfTShirts = 20;
-
-        @Override
-        float itemPrice() {
-            return tShirtPrice * numberOfTShirts;
-        }
-
-        @Override
-        float getPrice() {
-            return tShirtPrice;
-        }
-
-        @Override
-        int getNumberOf() {
-            return numberOfTShirts;
-        }
+    protected Item(float itemPrice, int numItems) {
+        this.itemPrice = itemPrice;
+        this.numItems = numItems;
     }
 
-    private class Pants extends Item {
+    protected float getItemPrice() {
+        return itemPrice;
+    }
 
-        int pantsPrice = 10;
-        int numberOfPants = 20;
+    public int getNumItems() {
+        return numItems;
+    }
 
-        @Override
-        float itemPrice() {
-            return pantsPrice * numberOfPants;
-        }
+    protected abstract float calculatePrice();
 
-        @Override
-        float getPrice() {
-            return pantsPrice;
-        }
-
-        @Override
-        int getNumberOf() {
-            return numberOfPants;
-        }
+    protected void setVoidPrice(float price) {
+        this.itemPrice = price;
     }
 }
