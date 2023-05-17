@@ -2,7 +2,7 @@ package vjezbe.vjezbe1;
 
 import java.util.Scanner;
 
-public class Zadatak3_1 {
+public class    Zadatak3_1 {
 
     public static void main(String[] args) {
 

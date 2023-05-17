@@ -54,11 +54,11 @@ public class Roboty implements Comparable<Roboty> {
     @Override
     public String toString() {
         String rep = "";
-                if (status) {
-                    rep = String.format("%-15s", batteryLevel);
-                } else {
-                    rep = String.format("%-15s", name);
-                }
+        if (status) {
+            rep = String.format("%-15s", batteryLevel);
+        } else {
+            rep = String.format("%-15s", name);
+        }
         return rep;
     }
 

@@ -20,5 +20,6 @@ public class TestWebShop {
         WebShop5b pullnbear = new WebShop5b("Moskow", firstCustomer, order, new Payment5b("MAESTROCARD"));
         pullnbear.orderContentFromShop();
 
+
     }
 }

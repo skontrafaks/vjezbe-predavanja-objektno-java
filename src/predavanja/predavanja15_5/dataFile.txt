@@ -1,0 +1,5 @@
+1. Ovo je neka text datoteka s nekim podatcima.
+
+3. Druga linija teksta.
+
+5. Za sada posljednja linija...
