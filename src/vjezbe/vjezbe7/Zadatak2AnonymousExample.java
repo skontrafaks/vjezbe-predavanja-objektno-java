@@ -1,11 +1,11 @@
-package vjezbe.vjezbe7.zadatak2_anonymous_example;
+package vjezbe.vjezbe7;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Test {
+public class Zadatak2AnonymousExample {
     private static ArrayList<Integer> listOfNums = new ArrayList<>();
 
     public static void main(String[] args) {
