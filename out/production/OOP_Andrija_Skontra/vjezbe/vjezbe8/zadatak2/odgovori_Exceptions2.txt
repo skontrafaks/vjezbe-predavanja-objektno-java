@@ -1,0 +1,3 @@
+Do problema dolazi kad korisnik unese bilo što osim cijelog broja.
+Ovdje se radi o unchecked exceptionu zato sto ga compiler ne moze uhvatiti.
+Kako bi se izbjegao ovaj problem, koristimo try-catch blok.

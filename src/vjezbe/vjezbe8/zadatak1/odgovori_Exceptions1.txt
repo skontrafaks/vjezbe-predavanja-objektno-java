@@ -1,0 +1,3 @@
+Ako unesemo krivi path, program ce nam dati poruku o gresci.
+Ovo su checked exceptions.
+Ukoliko promjenimo atribut file u read only iz njega cemo moci samo citati, ali ne i pisati.
