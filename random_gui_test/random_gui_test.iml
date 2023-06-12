@@ -8,5 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="flatlaf-3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.miglayout:miglayout-swing:4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.miglayout:miglayout-core:4.2" level="project" />
   </component>
 </module>
