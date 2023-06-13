@@ -1,10 +1,7 @@
-package vjezbe.vjezbe9.zadatak1;
-
-import predavanja.predavanja22_5.SerDeserial;
+package vjezbe.vjezbe9.zadatak1i2;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.temporal.TemporalField;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Gunslinger implements Serializable {
@@ -50,5 +47,45 @@ public class Gunslinger implements Serializable {
                 ", strongHand='" + strongHand + '\'' +
                 ", twoGuns=" + twoGuns +
                 '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getDuels() {
+        return duels;
+    }
+
+    public void setDuels(int duels) {
+        this.duels = duels;
+    }
+
+    public String getStrongHand() {
+        return strongHand;
+    }
+
+    public void setStrongHand(String strongHand) {
+        this.strongHand = strongHand;
+    }
+
+    public boolean isTwoGuns() {
+        return twoGuns;
+    }
+
+    public void setTwoGuns(boolean twoGuns) {
+        this.twoGuns = twoGuns;
     }
 }

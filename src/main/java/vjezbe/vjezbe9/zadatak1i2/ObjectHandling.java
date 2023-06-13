@@ -1,4 +1,4 @@
-package vjezbe.vjezbe9.zadatak1;
+package vjezbe.vjezbe9.zadatak1i2;
 
 import java.io.EOFException;
 import java.io.File;
@@ -19,7 +19,7 @@ public class ObjectHandling {
 
         try{
             if (!file.exists () || !append) out = new ObjectOutputStream (new FileOutputStream (filename));
-            else out = new vjezbe.vjezbe9.zadatak1.ObjectHandling.AppendableObjectOutputStream(new FileOutputStream (filename, append));
+            else out = new vjezbe.vjezbe9.zadatak1i2.ObjectHandling.AppendableObjectOutputStream(new FileOutputStream (filename, append));
             for (E element : elements) {
                 out.writeObject(element);
             }
